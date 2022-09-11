@@ -1,0 +1,128 @@
+{% extends 'camper/base.html' %}
+
+{% load static %}
+
+
+
+
+{% block content %}
+
+
+
+
+
+
+<!-- Section Contact -->
+  <section id="contact" class="section-inquiry ">
+
+    <div class="container">
+      <div class="row ">
+        <div class="col s12 l12 "></div>
+        <h4 class="teal-text contactspace"> About Journey-Japan</h4>
+
+<p class="contactpar">We are conveniantly located in 
+  downtown, Shinkuku in the heart of Tokyo. We have a lot of knowledge about 
+  good camping sites in Japan and can give you our suggestions about where to go. 
+  Our campervans can be picked up right in Shinjuku. We can meet you at Shinkuku station and take you to our 
+  rental van location. We will also provide you a map and give you directions on how to 
+  get out of Tokyo. If you have any questions about our camper vans and the services we 
+  provide, please feel free to contact us anytime through the inquiry form below or by email or phone. 
+</p>
+
+        
+<h4 class=" contactspace2"> Contact Form</h4>
+      </div>
+
+
+      <div class="row ">
+        <div class="col s12 m4 l4 ">
+          
+   <div class="">
+     
+     <a href="{% url 'home' %}" class="brand-logo black-text">
+      <img src="{% static 'images/logo44.png'%}">
+    </a>
+    
+     <p>2-3-7 Kabukicho, Shinjuku-ku</p>
+     <p>Tokyo, 160-0021</p>
+     <p>info@japan-journey.com</p>
+     <p>070-4738-0024</p>
+     <br />
+     <br />
+   </div>
+ </div>
+
+
+
+              <div class="col s12 m7  offset-m1 ">
+
+
+                <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s12">
+          <input placeholder="" id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+
+      </div>
+
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input placeholder="" id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea placeholder="" id="textarea1" class="materialize-textarea"></textarea>
+          <label for="">Message</label>
+        </div>
+      </div>
+
+    </form>
+    
+    <input type="submit" name="" value="Send Message" 
+    class="btn btn-large check ">
+
+
+
+  </div>
+  </div>
+
+
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock  %}

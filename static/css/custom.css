@@ -1,0 +1,227 @@
+/* All Site Styles */
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  color: #3D3C42;
+}
+
+
+
+
+/* Camper1 (Amity) Styles */
+
+.section-camper1 {
+  margin-top: 50px !important;
+  
+}
+
+.section-camper1 .rental-rate{
+  
+  margin-left: 60px;
+  margin-top: 50px;
+  font-size: large;
+  
+}
+
+.section-camper1 .rental-price{
+  
+  
+  font-size: 24px;
+  font-family: sans-serif;
+  
+
+  
+}
+
+
+
+.camperdetail img{
+  
+  width: 400px;
+  height: auto;
+  
+}
+
+.camperdetail2 img{
+  
+  width: 320px;
+  height: auto;
+  padding-left: 80px;
+  padding-top: 20px;
+ 
+  
+}
+
+
+
+
+/* Camper Icon Styles */
+
+.icon {
+  position: relative;
+  /* Adjust these values accordingly */
+  top: 7px;
+  left: 0px;
+  margin-right: 10px;
+}
+
+/* Camper Make Reservation Button */
+
+.btn.check {
+ background-color: #64ffda;
+}
+
+.btn.check:hover{
+  color: #eeeeee  ;
+  background-color: #00bfa5;
+}
+
+
+
+/* Camper Home Page */
+
+
+.section-camperhome {
+  margin-top: 50px !important;
+  margin-bottom: 60px !important;
+  
+  
+}
+
+.section-camperrentals .camper2home {
+  margin-bottom: 100px !important;
+  
+  
+}
+
+.section-camperrentals .par1{
+  margin-right: 140px;
+  margin-bottom: 20px;
+  
+  
+}
+
+
+
+/* Camper Home Page Rentals */
+
+
+.section-camperrentals {
+  background-color: #efebe9 ;
+  padding-top: 20px;
+  
+}
+
+
+.section-camperrentals .tit{
+  background-color: teal;
+  margin-bottom: 80px;
+  color: white;
+  padding: 7px;
+  
+  
+}
+
+
+
+
+.section-gallery {
+  background-color: #efebe9 ;
+  padding-top: 40px;
+  
+  
+}
+
+/* Company Inquiry Section */
+
+
+.section-inquiry .contactspace{
+  color: pink;
+  margin: 50px 0px 20px 0px;
+  background-color: #efebe9 ;
+  
+}
+
+.section-inquiry .contactspace2{
+  
+  margin: 70px 0px 20px 0px;
+  
+  
+}
+
+.section-inquiry .contactpar{
+  margin-bottom: 140px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Need To Fix */
+
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
+
+}
+
+.section-follow .fa-4x {
+  margin: 5px;
+
+}
+
+.camper img{
+  margin: 10px;
+  width: 420px;
+}
+
+.camper span{
+  color: #9fa8da indigo lighten-3;
+}
+.camper input{
+    margin-top: 20px;
+
+}
+
+
+
+
+
+
+
+
+.details{
+margin: 20px
+}
+.detail-line{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.card {
+    margin: 20px;
+
+}
+.card input{
+    margin-top: 20px;
+
+}
+
+
+.space {
+  margin: 50px;
+
+}

@@ -1,0 +1,188 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/a7592f8bc2.js" crossorigin="anonymous"></script>
+
+<!--Import Google Site Fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Roboto:ital,wght@0,100;1,100&family=Sacramento&display=swap" rel="stylesheet">
+
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.min.css' %}"  media="screen,projection"/>
+
+      <link href="{% static 'css/custom.css'%}" rel="stylesheet">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <Title>Journey-Japan Camper Rentals In Tokyo</Title>
+    </head>
+
+    <body id="home" class="scrollspy">
+      <div class="navbar-fixed " >
+        <nav class="white ">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="{% url 'home' %}" class="brand-logo black-text">
+
+                
+
+                <img src="{% static 'images/logo44.png'%}">
+              </a>
+              <a href="{% url 'home' %}" data-target="mobile-nav" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down ">
+                <li><a class ="black-text" href="{% url 'inquiry' %}">About Us</a></li>
+                  <li><a class ="black-text" href="{% url 'home' %}">Camper Vans</a></li>
+                    <li><a class ="black-text" href="#popular">Popular Camping Sites</a></li>
+                    <li><a class ="black-text" href="{% url 'inquiry' %}">Contact Us</a></li>
+
+                </ul>
+
+              </div>
+
+            </div>
+
+          </nav>
+
+        </div>
+
+        <ul class="sidenav" id="mobile-nav">
+          <li>
+            <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
+              <a href="#search">Search</a>
+              </li>
+              <li>
+                <a href="#popular">Popular Places</a>
+                </li>
+                <li>
+                  <a href="#inquiry">Inquiry</a>
+                  </li>
+
+          </ul>
+
+
+
+
+
+
+ {% block content %}
+
+
+
+ {% endblock content %}
+
+
+
+
+ <footer class="page-footer  #212121 grey darken-4">
+         <div class="container">
+           <div class="row">
+             <div class="col l7 s12">
+               <h5 class="white-text">Journey-Japan </h5>
+
+               <p class="grey-text detail-line ">Email: info@japan-journey.com</p>
+               <p class="grey-text detail-line ">Phone: 070-4738-0024</p>
+
+
+
+
+
+             </div>
+             <div class="col l3  s12">
+               <h5 class="white-text">Links</h5>
+               <ul>
+                 <ul>
+                   <li><a class ="grey-text" href="{% url 'home' %}" >Home</a></li>
+                   <li><a class ="grey-text" href="#campervans">Camper Vans</a></li>
+                   <li><a class ="grey-text" href="#popular">Popular Camping Sites</a></li>
+                   <li><a class ="grey-text" href="{% url 'inquiry' %}">Inquiry</a></li>
+                 </ul>
+
+
+
+             </div>
+             <div class="col l2  s12">
+               <h5 class="white-text">Follow us on</h5>
+               <a href="#" class="grey-text ">
+                 <i class="fab fa-facebook fa-2x"></i>
+               </a>
+               <a href="#" class="grey-text ">
+                 <i class="fab fa-twitter fa-2x"></i>
+               </a>
+               <a href="#" class="grey-text ">
+                 <i class="fab fa-pinterest fa-2x"></i>
+               </a>
+               <a href="#" class="grey-text ">
+                 <i class="fab fa-google-plus fa-2x"></i>
+               </a>
+
+             </div>
+
+
+
+           </div>
+         </div>
+         <div class="footer-copyright">
+           <div class="container">
+           © 2022 Copyright
+           <a class="grey-text text-lighten-4 right" href="#!">Japan-Journey Camper Rentals</a>
+           </div>
+         </div>
+       </footer>
+
+
+
+   </section>
+
+
+       <!--JavaScript at end of body for optimized loading-->
+       <script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+
+
+       <script>
+         // Side Navigation
+         const sideNav = document.querySelector('.sidenav');
+         M.Sidenav.init(sideNav, {});
+
+         // Slider
+         const slider = document.querySelector('.slider');
+         M.Slider.init(slider, {
+           indicators: false,
+           height: 500,
+           transition: 500,
+           interval: 6000
+         });
+
+         // Autocomplete
+         const ac = document.querySelector('.autocomplete');
+         M.Autocomplete.init(ac, {
+           data: {
+             "Gunma": null,
+             "Chichibu": null,
+             "Nagano": null,
+             "Gifu": null,
+             "Tochigi": null,
+
+           }
+         });
+
+         // Material Boxed
+         const mb = document.querySelectorAll('.materialboxed');
+         M.Materialbox.init(mb, {});
+
+         // Scrollspy
+         const ss = document.querySelectorAll('.scrollspy');
+         M.ScrollSpy.init(ss, {});
+
+   </script>
+     </body>
+   </html>
